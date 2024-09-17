@@ -1,0 +1,2 @@
+# Zenmap
+**Zenmap** adalah antarmuka grafis (GUI) untuk Nmap yang digunakan untuk memindai jaringan, mendeteksi port terbuka, layanan, sistem operasi, dan versi perangkat yang terhubung. Fitur utamanya mencakup visualisasi topologi jaringan, penyimpanan dan perbandingan hasil pemindaian, serta deteksi perangkat dan layanan secara mendetail. Zenmap memudahkan pemindaian jaringan tanpa perlu menggunakan perintah baris, ideal untuk manajemen keamanan jaringan.
