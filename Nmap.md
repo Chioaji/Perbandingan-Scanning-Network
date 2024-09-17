@@ -19,49 +19,55 @@ Nmap (Network Mapper) adalah sebuah alat yang digunakan untuk pemindaian jaringa
 
 Pemindaian Host atau IP Address:
 
-    nmap [hostname atau IP]
-Contoh: nmap 192.168.1.1
 Perintah ini memindai host atau IP address tertentu untuk memeriksa port yang terbuka dan layanan yang berjalan.
 Pemindaian Semua Port:
 
-    nmap -p- [IP]
-Contoh: nmap -p- 192.168.1.1
-Perintah ini memindai semua port dari 1 hingga 65535.
-Pemindaian Port Spesifik:
+    nmap [target]
+![nmap](https://github.com/user-attachments/assets/04f3a803-7233-4584-842c-62a64315c422)
 
-    nmap -p [nomor port] [IP]
-Contoh: nmap -p 80 192.168.1.1
 Memindai port tertentu pada host.
 Pemindaian Cepat (Quick Scan):
 
-    nmap -T4 [IP]
-Contoh: nmap -T4 192.168.1.1
+    map -p [nomor port] [target]
+
+![-p](https://github.com/user-attachments/assets/d53fb319-4c68-4a6f-84fc-01a782d70b27)
+
 Pemindaian cepat dengan mengurangi waktu tunggu antara pemindaian.
 Deteksi Sistem Operasi:
 
-    nmap -O [IP]
-Contoh: nmap -O 192.168.1.1
+    nmap -T4 [target]
+    
+
+![T4](https://github.com/user-attachments/assets/075aedea-80e8-4835-a52e-609010510965)
+
 Mendeteksi sistem operasi host target.
 Deteksi Versi Layanan:
 
-    nmap -sV [IP]
-Contoh: nmap -sV 192.168.1.1
+    nmap -O [target]
+![-o](https://github.com/user-attachments/assets/55121d6b-ad1b-4d5a-9eb7-2c07a0435fd8)
+
+
 Mengidentifikasi versi layanan yang berjalan di setiap port terbuka.
 Pemindaian Stealth (TCP SYN Scan):
 
-    nmap -sS [IP]
-Contoh: nmap -sS 192.168.1.1
-Pemindaian yang lebih "stealth" dengan mengirimkan paket SYN untuk menghindari deteksi firewall.
-Pemindaian UDP:
+    nmap -sV [target]
+![-sV](https://github.com/user-attachments/assets/183f1215-cef3-4398-a7d7-f26476356ea2)
 
-    nmap -sU [IP]
-Contoh: nmap -sU 192.168.1.1
-Memindai port UDP yang terbuka.
-Traceroute:
 
-    nmap --traceroute [IP]
-Contoh: nmap --traceroute 192.168.1.1
-Menampilkan jalur yang dilalui oleh paket untuk mencapai host target.
+Ping scan untuk melihat apakah host aktif atau tidak.
+
+    nmap -sP [target]
+![-sP](https://github.com/user-attachments/assets/83c22965-24c7-481e-bbde-015c4d634995)
+
+
+ 
+ Menampilkan Detail Tambahan (Verbose):
+ Menampilkan lebih banyak informasi selama proses pemindaian.
+
+
+    nmap -v [IP]
+![-v](https://github.com/user-attachments/assets/9cbf59ea-e216-438d-96af-d75c106e3477)
+
 
 
        
